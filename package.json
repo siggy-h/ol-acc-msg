@@ -1,0 +1,16 @@
+{
+    "name": "olarkhw",
+    "version": "1.0.0",
+    "description": "Siggy take home homework for Olark",
+    "scripts": {
+        "install-server": "cd server && npm install",
+        "install-web": "cd frontend && npm install",
+        "install": "npm run install-server && npm run install-web",
+        "start-server": "cd server && npm start",
+        "start-web": "cd frontend && npm start",
+        "start": "concurrently \"npm run start-server\" \"npm run start-web\""
+    },
+    "devDependencies": {
+        "concurrently": "7.6.0"
+    }
+}
